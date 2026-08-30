@@ -1,0 +1,2 @@
+# Tells GitHub Pages to serve these files as static HTML (skip Jekyll).
+# This filename must stay exactly ".nojekyll". It is hidden in Finder and most IDEs.
