@@ -1,0 +1,60 @@
+:root {
+  --bg: #0F0F14;
+  --card: #1E1E26;
+  --elevated: #303038;
+  --text: #F2F2F5;
+  --muted: #A1A1AA;
+  --border: rgba(255,255,255,0.12);
+  --accent: #34C759;
+  --link: #6EE7A0;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+}
+a { color: var(--link); }
+.wrap { max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; }
+header.app {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; margin-bottom: 28px; flex-wrap: wrap;
+}
+.brand { font-weight: 700; letter-spacing: 0.02em; text-decoration: none; color: var(--text); }
+.brand span { color: var(--accent); }
+nav a { margin-left: 16px; text-decoration: none; color: var(--muted); font-size: 14px; }
+nav a:hover, nav a.active { color: var(--accent); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+}
+h1 { font-size: 1.85rem; margin: 0 0 8px; }
+h2 { font-size: 1.25rem; margin: 2rem 0 0.7rem; }
+h3 { font-size: 1.05rem; margin: 1.4rem 0 0.5rem; }
+p, li { color: #E4E4E7; }
+.muted, .dates { color: var(--muted); font-size: 0.92rem; }
+hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.4rem; font-size: 0.92rem; }
+th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--elevated); }
+code { font-size: 0.9em; background: var(--elevated); padding: 1px 5px; border-radius: 4px; }
+.hero { margin-bottom: 20px; }
+.hero p { color: var(--muted); max-width: 56ch; }
+.links { display: grid; gap: 12px; margin-top: 20px; }
+.links a {
+  display: block; background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 18px 20px; text-decoration: none; color: var(--text);
+}
+.links a:hover { border-color: var(--accent); }
+.links a strong { display: block; color: var(--accent); margin-bottom: 4px; }
+footer { margin-top: 28px; color: var(--muted); font-size: 0.85rem; }
+@media (max-width: 640px) {
+  table { display: block; overflow-x: auto; }
+  nav a { margin-left: 0; margin-right: 14px; }
+}
